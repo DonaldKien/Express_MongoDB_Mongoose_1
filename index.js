@@ -3,7 +3,7 @@ const app		= express();
 const mongoose	= require("mongoose");
 const bodyParser= require("body-parser");
 
-mongoose.connect("mongodb+srv://project_1:abc123!@cluster0.mibfu.mongodb.net/restaurants?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://project_1:<PASSWORD>@cluster0.mibfu.mongodb.net/restaurants?retryWrites=true&w=majority");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
